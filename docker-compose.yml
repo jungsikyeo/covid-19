@@ -6,4 +6,4 @@ services:
     volumes:
       - /home/ubuntu/docker/covid-19/data:/var/jenkins_home/workspace/Covid-19/data
     ports:
-      - "8050:8050"
+      - "8000:8000"
