@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD [ "gunicorn", "main:server" ]
+CMD [ "gunicorn", "--bind", "0.0.0.0:5000" "main:server" ]
