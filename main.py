@@ -22,6 +22,8 @@ stylesheets = [
 
 app = dash.Dash(__name__, external_stylesheets=stylesheets)
 
+server = app.server
+
 bubble_map = px.scatter_geo(
     countries_df,
     size="확진",
@@ -136,5 +138,5 @@ def update_hello(value):
     return fig
 
 
-if __name__ == "__main__":
-    app.run_server(debug=True)
+# if __name__ == "__main__":
+#     app.run_server(debug=True)
