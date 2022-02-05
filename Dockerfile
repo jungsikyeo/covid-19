@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8050
 
-CMD [ "python", "main.py" ]
+CMD [ "gunicorn", "main:server" ]

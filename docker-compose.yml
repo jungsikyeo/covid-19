@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build: .
-    command: python main.py
+    command: gunicorn main:server
     volumes:
       - /home/ubuntu/docker/covid-19/data:/var/jenkins_home/workspace/Covid-19/data
     ports:
